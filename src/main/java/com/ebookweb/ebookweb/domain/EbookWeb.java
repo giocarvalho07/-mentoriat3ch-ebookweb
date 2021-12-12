@@ -1,6 +1,5 @@
 package com.ebookweb.ebookweb.domain;
 
-import com.sun.istack.NotNull;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,16 +12,12 @@ public class EbookWeb {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull
     private String nome;
 
-    @NotNull
     private String sobrenome;
 
-    @NotNull
     private String email;
 
-    @NotNull
     private String telefone;
 
     public Long getId() {
